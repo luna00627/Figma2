@@ -8,7 +8,7 @@ public class SceneSwitcher : MonoBehaviour
     private static SceneSwitcher instance;
     private Stack<string> sceneHistory = new Stack<string>();
 
-    void Awake()
+    /*void Awake()
     {
         if (instance == null)
         {
@@ -26,7 +26,7 @@ public class SceneSwitcher : MonoBehaviour
             instance.sceneHistory = this.sceneHistory;
             Destroy(gameObject);
         }
-    }
+    }*/
 
     public void SwitchScene(string sceneName)
     {
@@ -58,4 +58,5 @@ public class SceneSwitcher : MonoBehaviour
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
     }
+    
 }
